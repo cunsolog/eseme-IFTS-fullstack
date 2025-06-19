@@ -4,24 +4,19 @@ import java.time.LocalDateTime;
 
 public class PrenotazioneRequest{
         Long campoId;
-        LocalDateTime inizio;
-        LocalDateTime fine;
-        boolean illuminazioneRichiesta;
+        Integer ore;
+        Boolean illuminazioneRichiesta;
         Boolean doppio;
 
         public Long getCampoId() {
                 return campoId;
         }
 
-        public LocalDateTime getInizio() {
-                return inizio;
+        public Integer getOre() {
+                return ore;
         }
 
-        public LocalDateTime getFine() {
-                return fine;
-        }
-
-        public boolean isIlluminazioneRichiesta() {
+         public boolean isIlluminazioneRichiesta() {
                 return illuminazioneRichiesta;
         }
 
