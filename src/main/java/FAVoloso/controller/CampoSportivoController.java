@@ -10,13 +10,4 @@ public class CampoSportivoController {
     }
 
 
-
-    public ResponseEntity<?> aggiungiCampo(@RequestBody CampoSportivoRequest inputJSONmodel) {
-        /* #######################################################################
-        * Spring creerà l'oggetto inputJSONmodel facendo il parsing delle chiavi JSON ricevte dal client che dovranno coincidere
-        * con la classe CampoSportivoRequest.
-        * ########################################################################*/
-
-
-    }
 }
