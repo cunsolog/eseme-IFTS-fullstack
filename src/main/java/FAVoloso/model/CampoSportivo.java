@@ -1,6 +1,5 @@
 package FAVoloso.model;
 
-
 public abstract class CampoSportivo {
 
     /* #######################################################################

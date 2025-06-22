@@ -1,23 +1,25 @@
 package FAVoloso.controller;
 
 
+import FAVoloso.dto.PrenotazioneRequest;
+import FAVoloso.model.Prenotazione;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
 public class PrenotazioneController {
-    private final PrenotazioneRepository prenotazioneRepository;
-    private final CampoSportivoRepository campoSportivoRepository;
+    /*
+    * TO DO: implementare qui i  3.b e 3.c della parte 2.
+    * */
 
-    public PrenotazioneController(PrenotazioneRepository prenotazioneRepository, CampoSportivoRepository campoSportivoRepository) {
-        this.prenotazioneRepository = prenotazioneRepository;
-        this.campoSportivoRepository = campoSportivoRepository;
-    }
-
-
-
-    public ResponseEntity<MultiPrenotazioneResponse> setPrenotazioni(@RequestBody List<PrenotazioneRequest> inputJSONmodel) {
+    @PostMapping("/creaPrenotazione")
+    public ResponseEntity<Prenotazione> creaPrenotazione(@RequestBody PrenotazioneRequest inputJSONmodel) {
         /* #######################################################################
-         * Spring creerà l'oggetto inputJSONmodel facendo il parsing delle chiavi JSON ricevte dal client che dovranno coincidere
-         * con la classe PrenotazioneRequest.
+         * Spring creerà l'oggetto inputJSONmodel facendo il parsing delle chiavi JSON ricevute dal client che dovranno coincidere
+         * con la classe PrenotazioneRequest, accessibili con inputJSONmodel.get..().
          * ########################################################################*/
 
+        Prenotazione new_prenotazione = new Prenotazione();
+        return ResponseEntity.ok(new_prenotazione);
     }
-
 }
