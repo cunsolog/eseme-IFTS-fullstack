@@ -1,6 +1,7 @@
 package FAVoloso;
 
 
+import FAVoloso.model.CampoTennis;
 import FAVoloso.repository.CampoSportivoRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -20,6 +21,8 @@ public class Main {
                 /*
                 * Dopo aver implementato le classi del model popolare il database implementando qui il relativo codice
                 */
+                CampoTennis campoTennis = new CampoTennis();
+                repo.save(campoTennis);
             }
         };
     }
