@@ -1,6 +1,13 @@
 package FAVoloso.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+//public abstract class CampoSportivo {
 public abstract class CampoSportivo {
+    @Id
+    long id;
 
     /* #######################################################################
         SUGGERIMENTO: Questa metodo permette di mostrare il

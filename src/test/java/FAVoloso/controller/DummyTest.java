@@ -10,7 +10,7 @@ public class DummyTest {
     @Test
     public void dummyTest() {
         // Create an object to test
-        List<String> dummyList = new ArrayList()<>();
+        List<String> dummyList = new ArrayList<>();
         // Optional: initialize it with some values if needed
         dummyList.add("Test Item 1");
         // Invoke methods on the object
